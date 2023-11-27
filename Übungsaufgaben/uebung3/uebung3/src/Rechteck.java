@@ -1,14 +1,14 @@
 public class Rechteck extends Figur{
+    public double laenge;
+    public double breite;
 
-    private int breite;
-    private int laenge;
-
-    public Rechteck(int st, Punkt p){
+    public Rechteck(double laenge, double breite, Punkt p){
         super(p);
-        breite = st;
+        this.laenge = laenge;
+        this.breite = breite;
     }
 
-    public int berechneFlaeche(){
-        return -1;
+    public double berechneFlaeche(){
+        return (breite*laenge);
     }
 }

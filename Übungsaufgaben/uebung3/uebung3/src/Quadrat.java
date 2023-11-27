@@ -1,13 +1,20 @@
-public class Quadrat extends Figur{
-    // private Punkt anker;
-    private int breite;
+public class Quadrat extends Rechteck{
 
-    public Quadrat(int st, Punkt p){
-        super(p);
-        breite = st;
+    // Quadrat & Aufruf von Super
+    public Quadrat(double laenge, Punkt p){
+        super(laenge, laenge, p);
     }
 
-    public int berechneFlaeche(){
-        return -1;
+    // Berechnungen
+    public double berechneFlaeche(){
+        return (laenge*laenge);
+    }
+    public double berechneDiagonale(){ return Math.sqrt(2)*laenge;}
+
+
+    // Überschreiben der toString Methode
+    @Override
+    public String toString(){
+        return "Quadrat{} " + super.toString();
     }
 }

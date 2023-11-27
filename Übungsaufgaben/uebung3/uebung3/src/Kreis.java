@@ -7,6 +7,6 @@ public class Kreis extends Figur{
     }
 
     public double berechneFlaeche(){
-        return -1;
+        return (radius*radius*Math.PI);
     }
 }
