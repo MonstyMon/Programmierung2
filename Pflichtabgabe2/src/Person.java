@@ -3,7 +3,6 @@ public class Person {
     public String name;
     public char geschlecht;
 
-
     // Konstruktor
     public Person(String name, char geschlecht){
         this.name = name;
@@ -26,7 +25,7 @@ public class Person {
         return geschlecht;
     }
 
-    // toString Methode (Ausgabe)
+    // toString Methode, welche Objekte der Klasse Person als String zurückgibt
     @Override
     public String toString(){
         return "Name=" + name + " & Geschlecht=" +geschlecht ;
